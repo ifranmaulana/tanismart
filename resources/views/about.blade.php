@@ -26,10 +26,10 @@
     <!-- NAVBAR -->
 <nav class="bg-[#13293D] px-6 py-4 shadow-md fixed w-full top-0 z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="/" class="text-2xl font-bold text-black">
+        <a href="/" class="text-2xl font-bold text-white">
             TANI<span class="text-green-500">SMART</span>
         </a>
-        <ul class="flex space-x-6 text-black">
+        <ul class="flex space-x-6 text-white">
             <li><a href="/landing" class="hover:text-green-500 cursor-pointer">HOME</a></li>
             <li><a href="/about" class="hover:text-green-500">ABOUT</a></li>
             <li><a href="/article" class="hover:text-green-500">ARTICLE</a></li>
@@ -50,19 +50,19 @@
 <div class="h-20"></div>
 
 <!-- SECTION TENTANG -->
-<section id="tentang" class="bg-[#f8f9fa] py-16 px-6 flex w-fit">
-    <div class="max-w-6xl mx-auto ">
+<section id="tentang" class="bg-[#f8f9fa] py-16 px-6 flex ">
+    <div class="max-w-6xl mx-auto flex flex-col items-center justify-center">
         <h2 class="text-3xl font-bold text-green-500 mb-10 border-b-4 border-green-500 w-fit">
             TENTANG
         </h2>
-        <div class="bg-white rounded-lg shadow-lg p-10 flex  lg:flex-row items-center lg:items-start gap-10 w-full h-full ">
+        <div class="bg-white rounded-lg shadow-lg p-10 flex  lg:flex-row items-center lg:items-start gap-10 ">
             <!-- Icon -->
             <div class="flex-shrink-0 w-full lg:w-1/3 flex justify-center">
                 <img src="{{ asset('images/icon.png') }}" alt="Icon Daun" class="w-48 h-48 object-contain" />
             </div>
 
             <!-- Text -->
-            <div class="w-full lg:w-2/3 text-center lg:text-left">
+            <div class="w-full lg:w-2/3 text-center lg:text-left ">
                 <h3 class="text-2xl font-bold mb-4">Apa itu TANISMART?</h3>
                 <p class="text-gray-700 mb-2">
                     TaniSmart adalah sistem informasi web yang mendukung modernisasi pertanian di Indonesia.
