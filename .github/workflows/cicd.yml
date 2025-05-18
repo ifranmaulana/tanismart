@@ -1,4 +1,4 @@
-name: Laravel CI/CD
+name: Laravel CI/CD (MYSQL)
 
 on:
   push:
@@ -129,7 +129,7 @@ jobs:
           cd ~/laravel-app-tanismart
 
           # Backup existing deployment (optional)
-          # tar -czf /backup/laravel-backup-$(date +"%Y%m%d%H%M%S").tar.gz /var/www/laravel-app
+          # tar -czf /backup/laravel-backup-$(date +"%Y%m%d%H%M%S").tar.gz /var/www/laravel-d4rpl2c-kelompok4
 
           # Copy files to production directory
           sudo rsync -avz --delete \
@@ -137,15 +137,15 @@ jobs:
             --exclude='storage' \
             --exclude='.git' \
             --exclude='.github' \
-            ~/laravel-app-tanismart/ /var/www/laravel-app/
+            ~/laravel-app-tanismart/ /var/www/laravel-d4rpl2c-kelompok4/
 
           # Set permissions
-          sudo chown -R www-data:www-data /var/www/laravel-app
+          sudo chown -R www-data:www-data /var/www/laravel-d4rpl2c-kelompok4
           sudo chmod -R 755 /var/www/laravel-app/storage
           sudo chmod -R 755 /var/www/laravel-app/bootstrap/cache
 
           # Run deployment commands
-          cd /var/www/laravel-app
+          cd /var/www/laravel-d4rpl2c-kelompok4
           sudo -u www-data composer install --optimize-autoloader --no-dev
           sudo -u www-data php artisan config:cache
           sudo -u www-data php artisan route:cache
