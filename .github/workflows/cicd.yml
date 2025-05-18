@@ -67,6 +67,17 @@ jobs:
           sleep 3
         done
 
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install NPM dependencies
+      run: npm ci
+
+    - name: Build frontend
+      run: npm run build
+
     - name: Run database migrations and seed
       run: php artisan migrate:fresh --seed
 
