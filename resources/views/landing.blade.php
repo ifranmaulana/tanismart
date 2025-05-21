@@ -47,7 +47,7 @@
 
     <!-- Hero section -->
     <div class="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4 z-1">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">SELAMAT DATANG DI TANI<span class="text-green-500">SMART</span></h1>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">WELCOME DI TANI<span class="text-green-500">SMART</span></h1>
         <p class="max-w-2xl mb-6 text-lg">
             Kami menyediakan berbagai produk pertanian terbaik untuk membantu Anda mencapai hasil maksimal.
             Ingin tahu lebih banyak? Cek artikel-artikel kami yang penuh dengan tips dan informasi terbaru di dunia pertanian!
